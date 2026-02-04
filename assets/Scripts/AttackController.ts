@@ -21,7 +21,7 @@ export class AttackController extends Component {
 
     onTouchStart(event: EventTouch) {
         this.isTouching = true
-        // console.log('Touch Start'+event.getLocation())
+        // console.log('Touch Start'+event.getLocation())1
     }
     onTouchEnd(event: EventTouch) {
         // console.log('Touch End'+event.getLocation())
