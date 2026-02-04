@@ -24,7 +24,7 @@ export class AttackController extends Component {
         // console.log('Touch Start'+event.getLocation())
     }
     onTouchEnd(event: EventTouch) {
-        // console.log('Touch End'+event.getLocation())1
+        // console.log('Touch End'+event.getLocation())
         this.isTouching = false
     }
     update(deltaTime: number) {
