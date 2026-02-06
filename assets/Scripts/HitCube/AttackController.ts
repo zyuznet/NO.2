@@ -18,6 +18,10 @@ export class AttackController extends Component {
         input.on(Input.EventType.TOUCH_START, this.onTouchStart, this)
         input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this)
     }
+    onDestroy(): void {
+        input.off(Input.EventType.TOUCH_START, this.onTouchStart, this)
+        input.off(Input.EventType.TOUCH_END, this.onTouchEnd, this)
+    }
 
     onTouchStart(event: EventTouch) {
         this.isTouching = true
